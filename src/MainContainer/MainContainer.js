@@ -7,11 +7,7 @@ class MainContainer extends Component {
         persons: [
             {name: 'Vijay', age: 37},
             {name: 'Suman', age: 36},
-            {name: 'Saransh', age: 6},
-            {name: 'Vijay Kumar', age: 37},
-            {name: 'Suman Bandariya', age: 36},
-            {name: 'Saransh Bandar', age: 6}
-
+            {name: 'Saransh', age: 6}
         ],
         showPerson: false,
         showPersonFlag: false
@@ -45,7 +41,7 @@ class MainContainer extends Component {
                     <p>Type 2</p>
                     {
                         this.state.persons.map((person, index) => {
-                            return (<Person
+                            return (<Person key={"person-"+index}
                                 perObj={person}
                                 clickCross={() =>{this.deletePerson(index)}}
                                 changeNameHandler={
