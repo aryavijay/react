@@ -1,0 +1,11 @@
+.Person {
+    width: 400px;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    margin: 10px auto;
+
+}
+
+input {
+    padding-left: 10px;
+}
